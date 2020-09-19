@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+</head>
+
+<body>
+    <div class='contianer text-center'>
+        <a href="{%url 'about'%}">Click Me</a>
+        <form action="{%url 'password'%}">
+            <select name="length"> Length
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12" selected="selected">12</option>
+                <option value="13">13</option>
+            </select>
+        <br>
+        <input type="checkbox" name="uppercase"> UpperCase 
+        <br>
+        <br>
+        <input type="checkbox" name="numbers"> Numbers 
+        <br><br>
+        <input type="checkbox" name="specialCharacters"> Special Characters
+        <br>
+        <input type="submit" value="Generate Password" class='btn btn-primary'>
+    </form>
+</div>
+</body>
+
+</html>
